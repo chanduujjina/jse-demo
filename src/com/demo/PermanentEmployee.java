@@ -16,8 +16,8 @@ public class PermanentEmployee extends EmployeeInfo{
 	
 	 private double pfamount;
 	 
-		public PermanentEmployee(boolean iseligibelForcab, boolean iseligibleforfood, double pfamount,int id, String empName, String address, String gender, int experience) {
-			super(id,empName,address,gender,experience);
+		public PermanentEmployee(boolean iseligibelForcab, boolean iseligibleforfood, double pfamount,int id, String empName, String address, String gender, int experience,String empType) {
+			super(id,empName,address,gender,experience,empType);
 			this.iseligibelForcab = iseligibelForcab;
 			this.iseligibleforfood = iseligibleforfood;
 			this.pfamount = pfamount;
