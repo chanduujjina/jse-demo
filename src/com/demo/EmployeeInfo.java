@@ -2,6 +2,10 @@ package com.demo;
 
 public class EmployeeInfo {
 
+	public String getEmpType() {
+		return empType;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -36,20 +40,25 @@ public class EmployeeInfo {
 	
 	private int experience;
 	
-	public EmployeeInfo(int id, String empName, String address, String gender, int experience) {
+	private String empType;
+	
+	public EmployeeInfo(int id, String empName, String address, String gender, int experience,String empType) {
 		super();
 		this.id = id;
 		this.empName = empName;
 		this.address = address;
 		this.gender = gender;
 		this.experience = experience;
+		this.empType = empType;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "EmployeeInfo [id=" + id + ", empName=" + empName + ", address=" + address + ", gender=" + gender
-				+ ", experience=" + experience + "]";
+				+ ", experience=" + experience + ", empType=" + empType + "]";
 	}
+	
+	
 
 
 }
