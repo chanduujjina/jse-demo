@@ -1,20 +1,24 @@
 package com.demo;
 
-public class RelationShipDemo {
+public class ContractEmployee extends EmployeeInfo{
 	
-	public static void main(String[] args) {
-		
-		
-		
-		//create object for Organization
-		
-		EmployeeInfo info = new ContractEmployee("ibm", "01jan2018-03jan-2021", 1, "gouse", "guntur", "male", 6);
-		
-		Ogranization org = new Ogranization("infosys", "pocharam,hydreabad", info);
-		
-		System.out.println(org);
-		
-		System.out.println(org.getEmployeeInfo().getEmpName());
+	private String payrollName;
+	
+	private String contractDuration;
+	
+	
+
+	public ContractEmployee(String payrollName, String contractDuration,int id, String empName, String address, String gender, int experience,String empType) {
+		super(id,empName,address,gender,experience,empType);
+		this.payrollName = payrollName;
+		this.contractDuration = contractDuration;
 	}
+	
+	@Override
+	public String toString() {
+		return "ContractEmployee [payrollName=" + payrollName + ", contractDuration=" + contractDuration + "]";
+	}
+
+
 
 }
