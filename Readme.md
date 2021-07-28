@@ -139,3 +139,12 @@ types of cloning
 deep cloning
 
 what is a marker interface
+
+
+
+28/07:
+why java is not supporting multiple
+
+Interface:
+
+
