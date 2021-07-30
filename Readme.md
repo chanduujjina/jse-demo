@@ -147,4 +147,14 @@ why java is not supporting multiple
 
 Interface:
 
+30/07:
+-----------
+
+String Handlers in java
+
+why String is immutable?
+
+
+
+
 
