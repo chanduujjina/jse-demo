@@ -2,25 +2,59 @@ package com.demo.Strings;
 
 public class StringBufferDemo {
 
-	public static void main(String[] args) {
+	public  String getDynamicQuery(Employee employee) {
 		
 		StringBuffer buffer = new StringBuffer("select * from employee");
-		Employee employee = getSearchCriterria();
 		
+		
+		int count =0;
+		if(employee==null) {
+			return buffer.toString();
+		}
 		if(employee.getId()!=0) {
-			buffer.append(" where id ="+employee.getId());
+			
+			buffer.append("  where id ="+employee.getId());
+			count++;
 		}
 		
 		if(employee.getName()!=null) {
-			buffer.append(" and name ="+employee.getName());
+			if(count==0) {
+				buffer.append(" where");
+			}
+			else {
+				buffer.append(" and");	
+			}
+			buffer.append("  name ="+employee.getName());
+			count++;
 		}
 		
-		System.out.println(buffer.toString());
+		if(employee.getExperince()!=0) {
+			if(count==0) {
+				buffer.append(" where");
+			}
+			else {
+				buffer.append(" and");	
+			}
+			buffer.append(" experince ="+employee.getExperince());
+			count++;
+		}
+		
+		if(employee.getSalary()!=0) {
+			if(count==0) {
+				buffer.append(" where");
+			}
+			else {
+				buffer.append(" and");	
+			}
+			buffer.append(" salary ="+employee.getSalary());
+			count++;
+		}
+		
+		
+		return buffer.toString();
 
 	}
 	
-	public static Employee getSearchCriterria() {
-		return new Employee(1, "chandu", 0, 0);
-	}
+	
 
 }
