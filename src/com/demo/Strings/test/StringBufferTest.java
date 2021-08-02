@@ -21,14 +21,7 @@ public class StringBufferTest {
 	}
 	
 
-	@Test
-	public void testGetDynamicQuery() {
 	
-		String sql =demo.getDynamicQuery(new Employee(0, null, 0, 0));
-		System.out.println(sql);
-		Assert.assertEquals("select * from employee",sql);
-		
-	}
 	
 		
 		@Test
@@ -63,7 +56,6 @@ public class StringBufferTest {
 		
 			String sql =demo.getDynamicQuery(new Employee(1, "chandu",70000 , 0));
 			System.out.println(sql);
-			
 			
 		}
 	

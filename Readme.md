@@ -38,6 +38,19 @@ short cut to evalute the expression : ctr+shift+i
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 Sai :
 Cofee
 cofeeid;
@@ -155,6 +168,27 @@ String Handlers in java
 why String is immutable?
 
 String reverse in java?
+
+
+02/08:
+String Buffer
+Usecase 1:
+if the user not sending any search criteria then your query should be below
+
+select * from employee
+
+
+UseCase 2:
+if the User Send single Search Criteria like id/name/experience/salary/gender
+
+select * from employee where id =1
+
+
+UserCase 3:
+if the User Send send multiple search criteria
+
+
+
 
 
 
