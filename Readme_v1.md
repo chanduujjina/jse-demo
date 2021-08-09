@@ -27,3 +27,21 @@ when we will go throws and try catch ?
 why need of exception handling?
 
 what is meant by abrupt terminating?
+
+How to create an custom exception
+
+what is the diffrences between throws and throw key word in java?
+
+validations on form
+
+shorts for eclipse:
+open file
+ctr+shift+R
+
+open the jar file 
+ctr+shift+t
+
+open method in class:
+ctr+o
+
+
